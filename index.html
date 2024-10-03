@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Tabs</title>
+</head>
+
+<body>
+  <header>
+    <h2>In this example, we use JavaScript to "click" on the load.</h2>
+    <h1>Tabbed Content / Contenido con pestañas</h1>
+    <hr>
+    <p>En este ejemplo, utilizamos JavaScript para "hacer clic" en el botón de Primera pestaña , para abrir la pestaña
+      al cargar la página. Al hacer clic en cada pestaña se oculta el contenido de la otra pestaña y mostrar el
+      contenido de la pestaña en la que se hizo clic. De forma predeterminada, habilitada la primera pestaña. </p>
+  </header>
+  <hr>
+  <div class="tab">
+    <button class="tablinks active" onclick="openTabs(event,'Primera_pestaña')" id="defaultOpen"><i class="fa-solid fa-gears"></i> Primera pestaña</button>
+    <button class="tablinks" onclick="openTabs(event,'Segunda_pestaña')"><i class="fa-solid fa-gears"></i> Segunda pestaña</button>
+    <button class="tablinks" onclick="openTabs(event,'Tercera_pestaña')"><i class="fa-solid fa-gears"></i> Tercera pestaña</button>
+    <button class="tablinks" onclick="openTabs(event,'Cuarta_pestaña')"><i class="fa-solid fa-gears"></i> Cuarta pestaña</button>
+  </div>
+
+  <div id="Primera_pestaña" class="tabcontent">
+    <h3>Primera pestaña</h3><br>
+    <p>"¡Deja volar tu imaginación! Agrega un texto ficticio que refleje el contenido real que tendrá la pestaña. Por
+      ejemplo, si es una pestaña de 'Productos', puedes escribir 'Descubre nuestra nueva línea de productos'. ¡Las
+      posibilidades son infinitas!"</p>
+  </div>
+
+  <div id="Segunda_pestaña" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>Segunda pestaña</h3><br>
+    <p>"¡Deja volar tu imaginación! Agrega un texto ficticio que refleje el contenido real que tendrá la pestaña. Por
+      ejemplo, si es una pestaña de 'Productos', puedes escribir 'Descubre nuestra nueva línea de productos'. ¡Las
+      posibilidades son infinitas!"</p>
+  </div>
+
+  <div id="Tercera_pestaña" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>Tercera pestaña</h3><br>
+    <p>"¡Deja volar tu imaginación! Agrega un texto ficticio que refleje el contenido real que tendrá la pestaña. Por
+      ejemplo, si es una pestaña de 'Productos', puedes escribir 'Descubre nuestra nueva línea de productos'. ¡Las
+      posibilidades son infinitas!"</p>
+  </div>
+
+  <div id="Cuarta_pestaña" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h3>Cuarta pestaña</h3><br>
+    <p>"¡Deja volar tu imaginación! Agrega un texto ficticio que refleje el contenido real que tendrá la pestaña. Por
+      ejemplo, si es una pestaña de 'Productos', puedes escribir 'Descubre nuestra nueva línea de productos'. ¡Las
+      posibilidades son infinitas!"</p>
+  </div>
+  <hr>
+  <footer>
+    <p>Author: Jairo Cárdenas<br>
+    <a href="mailto:jairocardenas@gmail.com">jairocardenas@gmail.com</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

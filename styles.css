@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #e5f2ff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+header h1,
+h2 {
+  text-align: center;
+  margin: 3%;
+}
+
+header p {
+  text-align: justify;
+  margin: 2%;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #fff;
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 680px) {
+  .tab {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    background-color: #818080;
+  }
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  border-right: 1px solid #000;
+}
+
+/* .tab button+button::before{
+  padding: 3px;
+  color: black;
+  content: "/\00a0";
+} */
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #818080;
+  border-bottom: 4px solid #000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #818080;
+  color: black;
+  border-bottom: 4px solid #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin: 3%;
+  padding: 50px;
+  border-top: none;
+  border-radius: 13px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+
+#Primera_pestaña {
+  color: #fff;
+  background-color: #000;
+}
+
+#Segunda_pestaña {
+  color: #000;
+  background-color: #fff;
+}
+
+#Tercera_pestaña {
+  color: #fff;
+  background-color: red;
+}
+
+#Cuarta_pestaña {
+  color: #000;
+  background-color: yellow;
+}
+
+footer {
+  text-align: start;
+  padding: 3px 7px;
+  margin: 7px;
+  line-height: 23px;
+}
